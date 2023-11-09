@@ -7,6 +7,13 @@
     "editor.formatOnSave": true
   },
   "[liquid]": {
+    "editor.defaultFormatter": "Shopify.theme-check-vscode",
     "editor.formatOnSave": true
-  }
+  },
+  "i18n-ally.localesPaths": [
+    "locales"
+  ],
+  "i18n-ally.pathMatcher": "(?<locale>[\\w-_]+)(.schema)?.(?<ext>json|ya?ml|json5)",
+  "i18n-ally.annotationInPlace": false,
+  "i18n-ally.keystyle": "nested"
 }

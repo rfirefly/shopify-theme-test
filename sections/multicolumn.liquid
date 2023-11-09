@@ -133,6 +133,7 @@
                     {% else %}
                       href="{{ block.settings.link }}"
                     {% endif %}
+                    target="{{ block.settings.target }}"
                   >
                     {{- block.settings.link_label | escape -}}
                     <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span></a
@@ -407,6 +408,22 @@
           "type": "url",
           "id": "link",
           "label": "t:sections.multicolumn.blocks.column.settings.link.label"
+        },
+        {
+          "type": "select",
+          "id": "target",
+          "label": "t:sections.multicolumn.blocks.column.settings.target.label",
+          "default": "_self",
+          "options": [
+            {
+              "value": "_self",
+              "label": "t:sections.multicolumn.blocks.column.settings.target.options__1.label"
+            },
+            {
+              "value": "_blank",
+              "label": "t:sections.multicolumn.blocks.column.settings.target.options__2.label"
+            }
+          ]
         }
       ]
     }

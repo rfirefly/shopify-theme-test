@@ -2225,6 +2225,15 @@
             },
             "link": {
               "label": "链接"
+            },
+            "target": {
+              "label": "标签类型",
+              "options__1": {
+                "label": "当前标签"
+              },
+              "options__2": {
+                "label": "新标签"
+              }
             }
           },
           "name": "列"
